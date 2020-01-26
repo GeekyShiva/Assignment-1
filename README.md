@@ -2,9 +2,9 @@
   <h1>JavaArgs </h1> 
   <h2>Clean Code Assignment</h2>
   <b>Submitted By:</b>
-  <b>Shivang Shekhar</b>
+  <b>Shivang Shekhar</b><br>
   <b>Roll No: 2019900021</b>
-<br><br><br>
+<br><br>
  <img src="http://s.4cdn.org/image/title/105.gif">
 </div><br /><br />
 
