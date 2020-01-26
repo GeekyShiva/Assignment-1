@@ -3,6 +3,7 @@
   <h2>Clean Code Assignment</h2>
   <b>Submitted By:</b>
   <b>Shivang Shekhar</b>
+  <b>Roll No: 2019900021</b>
 <br><br>
  <img src="http://s.4cdn.org/image/title/105.gif">
 </div><br /><br />
@@ -26,7 +27,7 @@ Before you Run the code, you might also nees to check for environment setup for 
 
 #### Intall or Update Java :zap:
 
-Run
+Run:
 ```
   * sudo add-apt-repository ppa:openjdk-r/ppa
   * sudo apt-get update -q 
@@ -35,7 +36,7 @@ Run
 
 #### For Tests :zap:
 
-Run
+Run:
 
 ```
  * Run the command given below from the root folder of this repo
@@ -123,7 +124,6 @@ There is a list of comprehensive actions performed under the above-mentioned poi
 
 ### Class Diagram Args :zap:
 
-![Class Diagram](src/classdiag/Class_Diagram)
 
 ![image](https://res.cloudinary.com/dhso5z9a1/image/upload/v1579950369/Class_Diagram_ynkm2n.jpg)
 
@@ -164,16 +164,17 @@ As stated above there are some major practises that were utilised to clean the c
 
 For the above changes some tools were used which needs to be mentioned here :
 
-:pushpin: Code Smell : I used  [Jdeodrant](http://jdeodorant.com/) :green_heart: integration to remove code smells and lints.
-:pushpin: Code Coverage: I used [Junit](https://junit.org/junit5/) :heart:
-:pushpin: Linting : I used [CheckStyle](https://marketplace.eclipse.org/content/checkstyle-plug) :heart: to remove lint from code 
+* :pushpin: Code Smell : I used  [Jdeodrant](http://jdeodorant.com/) :green_heart: integration to remove code smells and lints.
+* :pushpin: Code Coverage: I used [Junit](https://junit.org/junit5/) :heart:
+* :pushpin: Linting : I used [CheckStyle](https://marketplace.eclipse.org/content/checkstyle-plug) :heart: to remove lint from code 
 
 Now lets deep dive into the knitty-gritty of the various aspects of code cleaning:
 
 ### Code Coverage :zap:
 
-:radio_button: Code coverage has been imporved from **88.5 %** :small_red_triangle_down: to ** 91% ** :heavy_check_mark: overall.
-:radio_button: Code coverage is at a at a whopping **97%** :heavy_check_mark: if tests are not considered.
+* :radio_button: Code coverage has been imporved from **88.5 %** :small_red_triangle_down: to ** 91% ** :heavy_check_mark: overall.
+* :radio_button: Code coverage is at a at a whopping **97%** :heavy_check_mark: if tests are not considered.
+
 ..* As per the discussion online, tests are generally not covered during the coveraged for more information check this [Stackoverflow](https://stackoverflow.com/a/24958299/3801905) :pill: link.
 
 #### Code Coverage Improvements :zap:
