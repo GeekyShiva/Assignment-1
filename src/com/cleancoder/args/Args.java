@@ -1,7 +1,7 @@
 
 /**
- * <a href = "https://github.com/raghavmittal101/se-project/tree/dev">Link to Github Repo of this package.</a>
- * @author Raghav Mittal
+ * <a href = "https://github.com/GeekyShiva/Assignment-1">Link to Github Repo of this package.</a>
+ * @author Shivang Shekhar
  */
 
 package com.cleancoder.args;
@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * This is the root class. All other methods 
+ * This is the root class of all classes and all other methods 
  are invoked either directly or indirectly from this class.
  * @see Args
  * @see ArgsData
@@ -63,7 +63,7 @@ public class Args {
   /**
   * Passes the {@code elementId}(s) extracted from {@code args}
   to {@link com.cleancoder.args.Args#parseArgumentCharacter parseArgumentCharacter} method.
-  * @param argChars List of {@code elementId}s extracted from {@code args} string.
+  * @param argChars List of {@code elementId}s extracted from {@code args} and of type string.
   * @throws ArgsException {@link com.cleancoder.args.ArgsException}
   */
   private void parseArgumentCharacters(String argChars) throws ArgsException {
@@ -73,9 +73,9 @@ public class Args {
   }
 
   /**
-  * Checks if the 
+  * This method checks if the 
   * Validates {@code elementId} character given in command line argument
-  * to check if there exists a matching schema.
+  * to check if there exists a matching schema for the same.
   * @param argChar schema given in command line input
   * @throws ArgsException {@code UNEXPECTED_ARGUMENT} if flag don't match with schema.
   * @see com.cleancoder.args.ArgsData#argsFound method.
@@ -95,7 +95,7 @@ public class Args {
   * If {@code True} then {@code marshaler} corresponding to that {@code elementId} is executed.
   * @param argChar element from list of {@code elementId}(s) extracted from {@code args} string.
   * @return m Marshaler method if specified in the map for given 
-  {@code argChar} else returns null.
+  {@code argChar} else returns a null.
   * @throws ArgsException {@link com.cleancoder.args.ArgsException}
   * @see com.cleancoder.args.ArgsData
   */

@@ -134,7 +134,7 @@ src/ArgsClassDiagram.ucls
 
 ### JavaDocs :zap:
 
-To understand the code better follow the [JavaDocs]() given for the code.
+To understand the code better follow the [JavaDocs](https://raw.githack.com/GeekyShiva/Assignment-1/master/doc/index.html) given for the code.
 
 *JavaDocs for  tests are not available so as to reduce the on-screen clutter of code and I have tried to make classes/methods/ arg names to be more descriptive in-order to save the clutter*
 

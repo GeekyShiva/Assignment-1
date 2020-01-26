@@ -9,7 +9,7 @@ import java.util.Set;
 
 /**
  * This class is responsible for processing the {@code schema} argument 
- in {@link com.cleancoder.args.Args#Args Args} constructor and creating mappings between
+ in {@link com.cleancoder.args.Args#Args Args} constructor and creating mappings of
  schemas and marshalers.
  * @see com.cleancoder.args.Args
  */

@@ -80,7 +80,7 @@ public class ArgsException extends Exception {
   }
 
   /**
-   *  List of enums for different exceptions.
+   *  List of ENUMS for different exceptions.
    */
   public enum ErrorCode {
     OK, INVALID_ARGUMENT_FORMAT, UNEXPECTED_ARGUMENT, INVALID_ARGUMENT_NAME,
