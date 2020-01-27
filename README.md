@@ -433,7 +433,7 @@ also to handle concatinated type strings as arguments.
 
 ```
 
-## Bug
+## Bug :zap:
 
 The JavaArgs program is not fully bug free but has a bug in the schema which is described below :
 
@@ -460,7 +460,7 @@ value returned is an address of character and not the output.
 
 In some cases the same has been observed in ``` *``` character.
 
-### Fix 
+### Fix :zap:
 
 Fix for this would be changing the schema definition handling and parsing in the code 
 
