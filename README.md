@@ -447,6 +447,19 @@ Args args = new Args("x,y", new String[]{"-x", "alpha", "-y", "beta"});
 
 In the above code the arguments taken and tested are primarily alpha and not beta if passed as serial arguments.
 
+:heavy_plus_sign:
+
+Also, in this code if the command line arguments parsed are 
+
+```
+-s &amp
+
+```
+
+value returned is an address of character and not the output.
+
+In some cases the same has been observed in ``` *``` character.
+
 ### Fix 
 
 Fix for this would be changing the schema definition handling and parsing in the code 
