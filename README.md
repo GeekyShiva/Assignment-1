@@ -286,7 +286,7 @@ God Class | Extract Class | Schema
 
 
 
-:x: Following Code from ```Args.java``` has been decompsed into ```ArgsData.java```
+:x: Following Code from ```Args.java``` has been decomposed into ```ArgsData.java```
 
 ```
 private void parseSchemaElement(String element) throws ArgsException { 
@@ -389,6 +389,67 @@ public boolean getBoolean(char arg) {
 
 
 ```
+
+
+## Tests :zap:
+
+:heavy_plus_sign: Following test code has been added in order to cover all the test conditions and remove any potential smells if present at all 
+
+```
+public void testOkMessage() throws Exception {
+    ArgsException e = new ArgsException(OK, 'x', null);
+    assertEquals("TILT: Should not get here.", e.errorMessage());
+  }
+```
+
+also to handle concatinated type strings as arguments.
+
+```
+  @Test 
+  public void testContinuousFlags() throws Exception {
+    Args argsData = new Args("x#,y##", new String[]{"-xy", "20", "4.5"});
+    assertTrue(argsData.has('x'));
+    assertTrue(argsData.has('y'));
+    assertEquals(20, argsData.getInt('x'));
+    assertEquals(4.5, argsData.getDouble('y'),.001);
+  
+  }
+}
+
+```
+:heavy_plus_sign: ```MalformedMap``` has been modified as well since it was incomplete in the code.
+
+```
+ @Test
+  public void malFormedMapArgument() throws Exception {
+    try {
+      new Args("f&", new String[] {"-f", "key1:val1,key2"});
+      fail();
+    } catch (ArgsException e) {
+      assertEquals(MALFORMED_MAP, e.getErrorCode());
+      assertEquals('f', e.getErrorArgumentId());
+    }
+  }
+
+```
+
+## Bug
+
+The JavaArgs program is not fully bug free but has a bug in the schema which is described below :
+
+
+The arguments essentially read only single command line character that is passed and overlooking the characters passed after.
+
+For example 
+```
+Args args = new Args("x,y", new String[]{"-x", "alpha", "-y", "beta"});
+```
+
+In the above code the arguments taken and tested are primarily alpha and not beta if passed as serial arguments.
+
+### Fix 
+
+Fix for this would be changing the schema definition handling and parsing in the code 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

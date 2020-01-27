@@ -243,4 +243,17 @@ public class ArgsTest {
     assertFalse(args.getBoolean('y'));
     assertEquals(1, args.nextArgument());
   }
+
+
+  @Test 
+  public void testContinuousFlags() throws Exception {
+    Args argsData = new Args("x#,y##", new String[]{"-xy", "20", "4.5"});
+    assertTrue(argsData.has('x'));
+    assertTrue(argsData.has('y'));
+    assertEquals(20, argsData.getInt('x'));
+    assertEquals(4.5, argsData.getDouble('y'),.001);
+  
+  }
 }
+
+
